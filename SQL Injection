@@ -1,3 +1,7 @@
 sql injection:
 SQL injection is a type of injection attack where a Attacker interfere with the sql queries that an application interacts to its database, with the intent of manipulating the application's database.
 This can allow the attacker to access, modify, or retrieve data that they shouldn't have access to, potentially causing data breaches or unauthorized actions within the application.
+
+Impact of sql injection:
+SQL injection leads to unauthorized access, data breaches , potentially compromise the integrity and confidentiality of sensitive information stored in the database and  leading to reputational damage and regulatory fines for 
+the organization.
