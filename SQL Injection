@@ -5,3 +5,12 @@ This can allow the attacker to access, modify, or retrieve data that they should
 Impact of sql injection:
 SQL injection leads to unauthorized access, data breaches , potentially compromise the integrity and confidentiality of sensitive information stored in the database and  leading to reputational damage and regulatory fines for 
 the organization.
+
+Set of manual method to detect sql query:
+1.Identify User Input Points (Common entry points include search bars, login forms, and URL parameters)
+2.Single Quotes (' or 1=1 --)  If the application displays an error message or behaves unexpectedly, it might be vulnerable to SQL injection
+3.Test for Union-Based SQL Injection (try appending a UNION-Based payload)
+4.Boolean-Based Blind Injection (If the application doesn't provide visible error messages, you might be facing a blind SQL injection vulnerability.)
+5.Time-Based Blind Injection (time-based techniques involve causing a delay in the SQL query execution)
+6.Observe Application Behavior
+7.Second-Order SQL Injection (need to update)
