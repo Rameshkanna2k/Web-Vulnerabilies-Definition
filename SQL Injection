@@ -15,4 +15,14 @@ Set of manual method to detect sql query:
 4.Boolean-Based Blind Injection (If the application doesn't provide visible error messages, you might be facing a blind SQL injection vulnerability.)
 5.Time-Based Blind Injection (time-based techniques involve causing a delay in the SQL query execution)
 6.Observe Application Behavior
-7.Second-Order SQL Injection (need to update)
+7.Second-Order SQL Injection
+
+remediation of SQL injection:
+1.parameterized queries : provided by your programming language or database framework. These ensure that user input is treated as data and not executable SQL code
+2.Error Handling:Implement custom error handling to prevent error messages that may reveal sensitive information about your database structure.
+3.Object-Relational Mapping (ORM) Libraries:Consider using ORM libraries like Hibernate (for Java), Entity Framework (for .NET), 
+or Django ORM (for Python) that abstract away low-level SQL queries, reducing the risk of SQL injection.
+4.Input Validation:Implement strict input validation by filtering and sanitizing user inputs. Reject any input that doesn't meet your expected criteria.
+5.Escaping User Input:If you can't use prepared statements or parameterized queries, escape user input using proper escaping functions provided by your database framework.
+6.Web Application Firewall (WAF):Implement a web application firewall that can detect and block SQL injection attempts.
+
